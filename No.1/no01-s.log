@@ -1,0 +1,21 @@
+Script started on 2020-06-29 10:30:58+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="146" LINES="13"]
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.1[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.1[00m$ ./no01-s
+while文
+sin(0)=0.000000,cos(0)=1.000000
+sin(30)=0.500000,cos(30)=0.866025
+sin(60)=0.866025,cos(60)=0.500000
+sin(90)=1.000000,cos(90)=0.000000
+for文
+sin(0)=0.000000,cos(0)=1.000000
+sin(30)=0.500000,cos(30)=0.866025
+sin(60)=0.866025,cos(60)=0.500000
+sin(90)=1.000000,cos(90)=0.000000
+do-while文
+sin(0)=0.000000,cos(0)=1.000000
+sin(30)=0.500000,cos(30)=0.866025
+sin(60)=0.866025,cos(60)=0.500000
+sin(90)=1.000000,cos(90)=0.000000
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.1[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.1[00m$ ext[Kit
+exit
+
+Script done on 2020-06-29 10:31:08+09:00 [COMMAND_EXIT_CODE="0"]

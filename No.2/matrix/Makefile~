@@ -1,0 +1,11 @@
+PROGRAM = main
+OBJS = func_matrix.o
+CC = gcc
+CFLAGS = -02
+
+$(PROGRAM): $(PROGRAM).o $(OBJS)
+	$(CC) -o $(PROGRAM).o $(OBJS)
+$(OBJS) $(PROGRAM).o: func_matrix.h
+
+clean:
+	rm -f *.o

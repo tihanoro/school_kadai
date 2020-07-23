@@ -1,0 +1,4 @@
+file = multi_matrix.o func_matrix.o
+
+all:
+gcc -o multi_matrix ($file)

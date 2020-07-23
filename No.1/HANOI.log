@@ -1,0 +1,38 @@
+Script started on 2020-06-29 10:53:48+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="146" LINES="13"]
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.1[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.1[00m$ ./hanoi
+DISKの枚数：5
+mvdisk(0,2)
+mvdisk(0,1)
+mvdisk(2,1)
+mvdisk(0,2)
+mvdisk(1,0)
+mvdisk(1,2)
+mvdisk(0,2)
+mvdisk(0,1)
+mvdisk(2,1)
+mvdisk(2,0)
+mvdisk(1,0)
+mvdisk(2,1)
+mvdisk(0,2)
+mvdisk(0,1)
+mvdisk(2,1)
+mvdisk(0,2)
+mvdisk(1,0)
+mvdisk(1,2)
+mvdisk(0,2)
+mvdisk(1,0)
+mvdisk(2,1)
+mvdisk(2,0)
+mvdisk(1,0)
+mvdisk(1,2)
+mvdisk(0,2)
+mvdisk(0,1)
+mvdisk(2,1)
+mvdisk(0,2)
+mvdisk(1,0)
+mvdisk(1,2)
+mvdisk(0,2)
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.1[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.1[00m$ exit
+exit
+
+Script done on 2020-06-29 10:53:55+09:00 [COMMAND_EXIT_CODE="0"]

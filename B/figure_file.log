@@ -1,0 +1,38 @@
+Script started on 2020-06-30 16:11:40+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="225" LINES="13"]
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/B[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/B[00m$ ./figure_fiel[K[Kle
+入力するファイル:input.txt
+出力するファイル:output.txt
+1人目の入力 :完了
+2人目の入力 :完了
+3人目の入力 :完了
+4人目の入力 :完了
+5人目の入力 :完了
+6人目の入力 :完了
+No.   | Name                 | Apr.   | May    | June   | T.Time | T.Salary 
+------+----------------------+--------+--------+--------+--------+---------
+A0010 | MasayaUDO            |  48600 |  63000 |  37800 |    166 |   149400
+A0011 | KazukiSAKAMOTO       |  39150 |  60900 |  39150 |    160 |   139200
+A0020 | YutaTANAKA           |  34000 |  51000 |  34000 |    140 |   119000
+A0022 | TomoyaIIZUKA         |  39600 |  66000 |  44880 |    171 |   150480
+A1099 | UmikaMATSUMURA       |  30240 |  54600 |  25200 |    131 |   110040
+A2201 | RyoARAKI             |  16000 |  40000 |  24000 |    100 |    80000
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/B[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/B[00m$ cat input.txt
+6
+A0010 MasayaUDO 900 54 70 42
+A0011 KazukiSAKAMOTO 870 45 70 45
+A0020 YutaTANAKA 850 40 60 40
+A0022 TomoyaIIZUKA 880 45 75 51
+A1099 UmikaMATSUMURA 840 36 65 30
+A2201 RyoARAKI 800 20 50 30]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/B[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/B[00m$ cat output.txt
+No.   | Name                 | Apr.   | May    | June   | T.Time | T.Salary 
+------+----------------------+--------+--------+--------+--------+---------
+A0010 | MasayaUDO            |  48600 |  63000 |  37800 |    166 |   149400
+A0011 | KazukiSAKAMOTO       |  39150 |  60900 |  39150 |    160 |   139200
+A0020 | YutaTANAKA           |  34000 |  51000 |  34000 |    140 |   119000
+A0022 | TomoyaIIZUKA         |  39600 |  66000 |  44880 |    171 |   150480
+A1099 | UmikaMATSUMURA       |  30240 |  54600 |  25200 |    131 |   110040
+A2201 | RyoARAKI             |  16000 |  40000 |  24000 |    100 |    80000
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/B[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/B[00m$ exit
+exit
+
+Script done on 2020-06-30 16:12:15+09:00 [COMMAND_EXIT_CODE="0"]

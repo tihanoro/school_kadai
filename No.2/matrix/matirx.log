@@ -1,0 +1,74 @@
+Script started on 2020-06-29 11:09:13+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="146" LINES="13"]
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.2/matrix[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.2/matrix[00m$ ./main
+L行M列の行列AとM行N列の行列Bの積の計算
+Lを入力してください: 1
+Mを入力してください: 1
+Nを入力してください: 1
+行列Aを入力してください
+1行1列 :1
+行列Bを入力してください
+1行1列 :1
+A * B = 
+|  1.00 |
+
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.2/matrix[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.2/matrix[00m$ ./main
+L行M列の行列AとM行N列の行列Bの積の計算
+Lを入力してください: 1
+Mを入力してください: 2
+Nを入力してください: 3
+行列Aを入力してください
+1行1列 :1
+1行2列 :2
+行列Bを入力してください
+1行1列 :3
+1行2列 :4
+1行3列 :5
+2行1列 :6
+2行2列 :7
+2行3列 :8
+A * B = 
+| 15.00 18.00 21.00 |
+
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.2/matrix[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.2/matrix[00m$ ./main
+L行M列の行列AとM行N列の行列Bの積の計算
+Lを入力してください: 2
+Mを入力してください: 2
+Nを入力してください: 2
+行列Aを入力してください
+1行1列 :1
+1行2列 :2
+2行1列 :3
+2行2列 :4
+行列Bを入力してください
+1行1列 :5
+1行2列 :6
+2行1列 :7
+2行2列 :8
+A * B = 
+| 19.00 22.00 |
+| 43.00 50.00 |
+
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.2/matrix[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.2/matrix[00m$ ./main
+L行M列の行列AとM行N列の行列Bの積の計算
+Lを入力してください: 3
+Mを入力してください: 2
+Nを入力してください: 1
+行列Aを入力してください
+1行1列 :1
+1行2列 :2
+2行1列 :3
+2行2列 :4
+3行1列 :5
+3行2列 :6
+行列Bを入力してください
+1行1列 :7
+2行1列 :8
+A * B = 
+| 23.00 |
+| 53.00 |
+| 83.00 |
+
+]0;tazawa@LAPTOP-VP7PN0JG: ~/kadai/No.2/matrix[01;32mtazawa@LAPTOP-VP7PN0JG[00m:[01;34m~/kadai/No.2/matrix[00m$ exit
+exit
+
+Script done on 2020-06-29 11:10:12+09:00 [COMMAND_EXIT_CODE="0"]
