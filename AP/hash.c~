@@ -1,0 +1,28 @@
+#include<stdio.h>
+int hash(int x);
+
+int D[] = {81, 20, 45, 62, 89, 66, 42,
+	   70, 44, 51, 31};
+
+int main(void){
+  int H[16];
+  int x,i,k;
+
+  //
+  for(i=0;i<16;i++){
+    H[i] = -1;
+  }
+  for(i=0;i<11;i++){
+    k = hash(D[i]);
+    while(H[k] != -1) k++;
+    H[k] = D[i];
+  }
+
+  for(i=0)
+  
+  return 0;
+}
+
+int hash(int x){
+  return x%7;
+}
