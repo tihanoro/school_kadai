@@ -1,9 +1,15 @@
 # shool_kadai
+このリポジトリをクローンする際のコマンド   
+git clone https://github.com/tihanoro/school_kadai/
 ## AP 応用プログラミング
 ### binalySearch.c
 二分探索法のプログラム
 ### hash.c
 ハッシュ法のプログラム
+### selectionSort.c
+選択ソートのプログラム
+### insertionSort.c
+挿入ソートのプログラム
 
 ## A B C D No.1 No.2 No.3 プログラミング
 よくわからんプログラムがいっぱい
