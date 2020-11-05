@@ -1,6 +1,8 @@
 # shool_kadai
 このリポジトリをクローンする際のコマンド   
+```
 git clone https://github.com/tihanoro/school_kadai/
+```
 ## AP 応用プログラミング
 ### binalySearch.c
 二分探索法のプログラム
