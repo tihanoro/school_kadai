@@ -5,7 +5,7 @@ git clone https://github.com/tihanoro/school_kadai/
 ```
 GitHubにプッシュするときに使う一連のコマンド  
 fileName：変更が行われたファイル  
-origin：共有リポジトリ（GitHub等）
+origin：共有リポジトリ（GitHub等）  
 master：マスターブランチ（よくわかってない）
 ```
 git add fileName
