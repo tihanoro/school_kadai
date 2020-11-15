@@ -4,6 +4,7 @@ void push_heap(int *T,int x,int *size);
 int deleate_maximum(int *T,int *size);
 void swap(int *a,int *b);
 void print_array(int *array,int n);
+void print_tree(int *array);
 
 int main(void){
   int D[10] = {17,39,1,9,5,24,2,11,23,6};
@@ -17,21 +18,25 @@ int main(void){
     T[i] = -1;
   }
 
+  printf("-1 is empty\n");
+
   //Tにヒープソートでデータを挿入
   size = -1;
+  printf("heap[%2d]\n",size+1);
+  print_tree(T);
   for(i=0;i<10;i++){
     push_heap(T,D[i],&size);
   }
-  printf("heap[%d]:\n",size);
-  print_array(T,10);
 
+  printf("heap[%d]\n",size+1);
+  print_tree(T);
   
   //Dにデータを戻す
   for(i=0;i<10;i++){
     D[i] = deleate_maximum(T,&size);
   }  
 
-  printf("After Sort:");
+  printf("After sort:");
   print_array(D,10);
 
   return 0;
@@ -44,12 +49,18 @@ void push_heap(int *T,int x,int *size){
   *size = *size + 1;
   T[*size] = x;
 
+  printf("heap[%2d]\n",*size+1);
+  print_tree(T);
+
   //親節点と大きさ比較と入れ替え
   k=*size;
   while((T[k]>T[k/2]) && (k>0)){
     swap(&T[k],&T[k/2]);
     k = k/2;
+    printf("heap[%2d]\n",*size+1);
+    print_tree(T);
   }
+  
 }
 
 int deleate_maximum(int *T,int *size){
@@ -60,16 +71,21 @@ int deleate_maximum(int *T,int *size){
   T[0] = T[*size];  //最下位節点の消去
   T[*size] = -1;
   *size = *size-1;
+
+  printf("heap[%2d]\n",*size+1);
+  print_tree(T);
   
   //ヒープの入れ替え
   k=0;
-  while(2*k <= *size){
+  while(2*k+1 <= *size){
 
-    if(2*k == *size){  //子節点が１つのとき
+    if(2*k+1 == *size){  //子節点が１つのとき
 
       if(T[k] < T[2*k+1]){  //子節点が親節点より大きいとき
         swap(&T[k],&T[2*k+1]);
         k = 2*k+1;
+        printf("heap[%2d]\n",*size+1);
+        print_tree(T);
       }else{  //子節点が親節点以下のとき
         break;
       }
@@ -85,13 +101,17 @@ int deleate_maximum(int *T,int *size){
       if(T[k]<T[big]){
         swap(&T[k],&T[big]);
         k = big;
+        printf("heap[%2d]\n",*size+1);
+        print_tree(T);
+
       }else{
         break;
       }
 
     }
-    
+  
   }
+
   return output;
 }
 
@@ -109,4 +129,25 @@ void print_array(int *array,int n){
     printf("%d ",array[i]);
   }
   printf("}\n");
+}
+
+void print_tree(int *array){
+  int i;
+  //printf("              %2d              \n",array[0]);
+  //printf("             /  \\             \n");
+  //printf("            /    \\            \n");
+  //printf("           /      \\           \n");
+  //printf("          /        \\          \n");
+  //printf("         /          \\         \n");
+  //printf("        /            \\        \n");
+  printf("        ______%2d______        \n",array[0]);
+  printf("       /              \\       \n");
+  //printf("      %2d              %2d      \n",array[1],array[2]);
+  //printf("     /  \\            /  \\     \n");
+  //printf("    /    \\          /    \\    \n");
+  printf("    __%2d__          __%2d__    \n",array[1],array[2]);
+  printf("   /      \\        /      \\   \n");
+  printf("  %2d      %2d      %2d      %2d  \n",array[3],array[4],array[5],array[6]);
+  printf(" /  \\    /  \\    /  \\    /  \\ \n");
+  printf("%2d  %2d  %2d  %2d  %2d  %2d  %2d  %2d\n",array[7],array[8],array[9],-1,-1,-1,-1,-1);
 }
