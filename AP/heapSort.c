@@ -4,7 +4,6 @@ void push_heap(int *T,int x,int *size);
 int deleate_maximum(int *T,int *size);
 void swap(int *a,int *b);
 void print_array(int *array,int n);
-void print_tree(int *array,int n);
 
 int main(void){
   int D[10] = {17,39,1,9,5,24,2,11,23,6};
@@ -110,15 +109,4 @@ void print_array(int *array,int n){
     printf("%d ",array[i]);
   }
   printf("}\n");
-}
-
-void print_tree(int *array,int n){
-  int i,j;
-  for(i=0;i<n;i++){
-    printf("%d ",array[i]);
-    if(i==0 || i==2 || i==6 || i==14){
-      printf("\n");
-    }
-  }
-  printf("\n");
 }

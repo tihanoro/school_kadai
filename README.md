@@ -3,6 +3,15 @@
 ```
 git clone https://github.com/tihanoro/school_kadai/
 ```
+GitHubにプッシュするときに使う一連のコマンド  
+fileName：変更が行われたファイル  
+origin：共有リポジトリ（GitHub等）
+master：マスターブランチ（よくわかってない）
+```
+git add fileName
+git commit -m "コメントを何か書く"
+git push origin master
+```
 ## AP 応用プログラミング
 ### binalySearch.c
 二分探索法のプログラム
@@ -12,6 +21,14 @@ git clone https://github.com/tihanoro/school_kadai/
 選択ソートのプログラム
 ### insertionSort.c
 挿入ソートのプログラム
+### heapSort.c
+ヒープソートを行うプログラム
+関数の説明
+・push_heap(int *T,int x,int *size)
+ヒープを格納する配列Tにxを追加する関数    
+・deleate_maximum(int *T,int *size)  
+ヒープの先頭を取り出す関数  
+※sizeはTの大きさ（要素の数）を格納している変数
 
 ## A B C D No.1 No.2 No.3 プログラミング
 よくわからんプログラムがいっぱい
