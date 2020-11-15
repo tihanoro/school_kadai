@@ -24,7 +24,7 @@ git push origin master
 ### heapSort.c
 ヒープソートを行うプログラム
 関数の説明  
-・push_heap(int *T,int x,int *size)
+・push_heap(int *T,int x,int *size)  
 ヒープを格納する配列Tにxを追加する関数    
 ・deleate_maximum(int *T,int *size)  
 ヒープの先頭を取り出す関数  
