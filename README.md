@@ -29,6 +29,13 @@ git push origin master
 ##### deleate_maximum(int *T,int *size)  
 ヒープの先頭を取り出す関数  
 ※sizeはTの大きさ（要素の数）を格納している変数
+### quickSort.c
+クイックソートを行うプログラム
+#### 関数の説明
+##### quickSort(int *D, int left, int right)
+再起する関数
+##### partition(int *D, int left, int right)
+適当に基準値D[k]を決めてD[k]より小さい物をD[k]より前にD[k]より大きいものをD[k]より後ろに持ってきて、D[k]の最終的な位置を返す関数
 
 ## A B C D No.1 No.2 No.3 プログラミング
 よくわからんプログラムがいっぱい
