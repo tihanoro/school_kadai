@@ -77,7 +77,9 @@ int partition(int *D, int left, int right){
             printf("SWAP(D[%d],D[%d])\n",i,j);
         }
     }
-    swap(&D[i],&D[right]);
+    if(D[i]>D[right]){
+        swap(&D[i],&D[right]);
+    }
 
     printf("D1[%d,%d]:",left,i-1);
     printArray(D,left,i-1);
