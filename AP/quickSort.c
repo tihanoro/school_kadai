@@ -35,7 +35,7 @@ void quickSort(int *D, int left, int right){
         quickSort(D,left,data-1);
         quickSort(D,data+1,right);
 
-        printf("\n組み立て:No.%d\n",++count);
+        printf("\nquick sort:No.%d\n",++count);
         printf("D1[%d,%d]:",left,data-1);
         printArray(D,left,data-1);
         printf("partition[%d]:",data);
@@ -53,7 +53,7 @@ int partition(int *D, int left, int right){
     int i,j,k;
     static int count = 0;
 
-    printf("\n分解:No.%d\n",++count);
+    printf("\npartition:No.%d\n",++count);
     printf("D[%d,%d]:",left,right);
     printArray(D,left,right);
 
