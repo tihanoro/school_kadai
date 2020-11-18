@@ -11,7 +11,7 @@ int main(void){
     //ソート前の配列の出力
     printf("Before sort:{");
     for(i=0;i<N;i++){
-        printf("%d ",D[i]);
+        printf("%2d ",D[i]);
     }
     printf("}\n");
 
@@ -21,7 +21,7 @@ int main(void){
     //ソート後の配列の出力
     printf("After sort:{ ");
     for(i=0;i<N;i++){
-        printf("%d ",D[i]);
+        printf("%2d ",D[i]);
     }
     printf("}\n");
 
@@ -41,7 +41,7 @@ void sort(int *d, int n){
         d[j] = x;
         printf("MOVE(D[%d],D[%d]):{ ",i,j);
         for(k=0;k<N;k++){
-            printf("%d ",d[k]);
+            printf("%2d ",d[k]);
         }
         printf("}\n");
 

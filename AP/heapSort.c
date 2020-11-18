@@ -54,9 +54,9 @@ void push_heap(int *T,int x,int *size){
 
   //親節点と大きさ比較と入れ替え
   k=*size;
-  while((T[k]>T[k/2]) && (k>0)){
-    swap(&T[k],&T[k/2]);
-    k = k/2;
+  while((T[k]>T[(k-1)/2]) && (k>0)){
+    swap(&T[k],&T[(k-1)/2]);
+    k = (k-1)/2;
     printf("heap[%2d]\n",*size+1);
     print_tree(T);
   }
