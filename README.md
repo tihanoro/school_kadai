@@ -33,9 +33,33 @@ git push origin master
 クイックソートを行うプログラム
 #### 関数の説明
 ##### quickSort(int *D, int left, int right)
-再起する関数
+再帰する関数  
+partition関数を用いて分割して分割した配列を再帰させる
 ##### partition(int *D, int left, int right)
 適当に基準値D[k]を決めてD[k]より小さい物をD[k]より前にD[k]より大きいものをD[k]より後ろに持ってきて、D[k]の最終的な位置を返す関数
+### listAdd
+連結リストの操作を行うプログラム
+#### listAdd.h
+連結リストの操作を行う関数が記述されたファイル
+##### typedef struct _record record
+連結リストのレコードの宣言
+##### void append(record **head, int x)
+連結リストへのデータの追加(先頭)
+##### void appendToTail(record **head, int x)
+連結リストへのデータの追加(最後尾)  
+(2020/12/3 22:45)セグメンテーションフォルトにより動作しない
+##### void ascendingOrder(record **head, int x)
+連結リストへのデータの追加(昇順)  
+(2020/12/3 22:45) 動作未確認
+##### void print_list(record *head)
+連結リストのデータの表示
+##### void print_array(int *array, int size)
+配列のデータの表示
+##### void deleate(record *head)
+連結リストのデータの削除
+(2020/12/3 22:45) 動作未確認
+##### void free_list(record *head)
+連結リストの解放
 
 ## A B C D No.1 No.2 No.3 プログラミング
 よくわからんプログラムがいっぱい
