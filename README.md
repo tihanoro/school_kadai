@@ -56,7 +56,7 @@ partition関数を用いて分割して分割した配列を再帰させる
 ##### void print_array(int *array, int size)
 配列のデータの表示
 ##### void deleate(record *head)
-連結リストのデータの削除
+連結リストのデータの削除  
 (2020/12/3 22:45) 動作未確認
 ##### void free_list(record *head)
 連結リストの解放
