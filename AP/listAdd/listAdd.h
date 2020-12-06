@@ -36,21 +36,16 @@ void appendToTail(record **head, int x){
     }
 
     //最後尾のリストの探索
-    record *tailList; //最後尾のリストを指すポインタ変数
-    tailList = *head;
-    printf("a\n");
-    if(tailList != NULL){
-        while(tailList->next != NULL){
-            printf("b\n");
-            tailList = tailList->next;
-        }
+    record **tailList; //最後尾のリストを指すポインタ変数
+    tailList = head;
+    while(*tailList != NULL){
+        tailList = &(*tailList)->next;
     }
-    printf("c\n");
 
     //追加するリストにデータを格納し最後尾に追加
     addList->data = x;
     addList->next = NULL;
-    tailList->next = addList;
+    *tailList = addList;
 }
 
 //連結リストへのデータの追加(昇順)
@@ -65,18 +60,16 @@ void ascendingOrder(record **head, int x){
     }
 
     //リストの追加先の探索
-    record *addPlace = *head;
-    if(addPlace->next != NULL){
-        while(addPlace->next != NULL){
-            if(x < addPlace->next->data) break;
-            addPlace = addPlace->next;
-        }
+    record **addPlace;
+    addPlace = head;
+    while((x < (*addPlace)->data) && (*addPlace != NULL)){
+        addPlace = &(*addPlace)->next;
     }
 
     //追加するリストにデータを格納しaddPlaceの次に追加
     addList->data = x;
-    addList->next = addPlace->next;
-    addPlace->next = addList;
+    addList->next = (*addPlace)->next;
+    (*addPlace)->next = addList;
 }
 
 //連結リストのデータの表示

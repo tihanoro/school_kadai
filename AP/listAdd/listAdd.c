@@ -12,6 +12,7 @@ int main(void){
     printf("array:");
     print_array(data,N);
 
+    printf("use append\n");
     head = NULL;
     for(i=0;i<N;i++){
         append(&head,data[i]);
@@ -19,6 +20,7 @@ int main(void){
     }
     free_list(head);
 
+    printf("use appendToTail\n");
     head = NULL;
     for(i=0;i<N;i++){
         appendToTail(&head,data[i]);
@@ -26,6 +28,7 @@ int main(void){
     }
     free_list(head);
 
+    printf("use ascendingOrder\n");
     head = NULL;
     for(i=0;i<N;i++){
         ascendingOrder(&head,data[i]);
