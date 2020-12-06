@@ -48,9 +48,12 @@ partition関数を用いて分割して分割した配列を再帰させる
 ##### void appendToTail(record **head, int x)
 連結リストへのデータの追加(最後尾)  
 (2020/12/3 22:45)セグメンテーションフォルトにより動作しない
+(2020/12/4 22:25)動作するようになった  
+原因はいろいろあるが、一言でまとめるとアドレス操作を間違っていた
 ##### void ascendingOrder(record **head, int x)
 連結リストへのデータの追加(昇順)  
 (2020/12/3 22:45) 動作未確認
+(2020/12/6 22:42) セグメンテーションフォルトにより動作しない
 ##### void print_list(record *head)
 連結リストのデータの表示
 ##### void print_array(int *array, int size)
